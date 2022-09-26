@@ -1,0 +1,16 @@
+
+Desarrollo de Test para Contempora (German)
+
+Ejecuciones:
+
+   #laravel new Contempora-app
+    -- a la fecha de hoy 26-09-2022 crea framework Laravel v 8.6.12 
+   #git init 
+
+   al ejecutar: Cl4ve007###
+   #php artisan serve --me aparece la version Laravel v8.83.24 (PHP v7.3.21)
+
+   creacion de DB en MariaDB  - contempora
+
+
+
