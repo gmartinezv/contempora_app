@@ -20,3 +20,7 @@ Route::get('/', function () {
 });
 
 Route::apiResource('/usuarios', UsuarioController::class );
+
+Route::get('/token', function () {
+    return csrf_token(); 
+});

@@ -45,13 +45,19 @@ ______________
 
     Modifico el controlador  UsuarioController.php 
     agregando las instrucciones conrespondiente a cada endpoint (get,post,put/patch)
-    
+
+    git push -u origin main (2do commit)
+
+    Revision de los datos * 
+    ** agregar las lineas en Models/Usuario: 
+              protected $guarded = []; (para poder utilizar post de postman y VerifyCsrfToken.php except de localhost)
+              public $timestamps = false;
+    ** en el Usuario/controller  coloque observaciones de la revision.
 
 
 
 
-
-
+ 
 
 
 

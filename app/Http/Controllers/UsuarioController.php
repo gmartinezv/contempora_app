@@ -12,9 +12,37 @@ class UsuarioController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Usuario::get();
+        // return Usuario::get($request->all());  creo que hay una forma asi como esta.
+        $data = null;
+        if ($request){
+            if ($request->nombre){            
+                $data=Usuario::where('nombre','=',$request->nombre)                
+               ->get();    
+               return $data;            
+            }
+            if ($request->correo){            
+                $data=Usuario::where('correo','=',$request->correo)                
+               ->get();       
+               return $data;         
+            }
+            if ($request->activo){            
+                $data=Usuario::where('activo','=',$request->activo)                
+               ->get();                
+               // activo=1 y activo=false :  solo asi me esta funcionando 
+               return $data;
+            }
+
+            return Usuario::get();
+            //  no esta fucnionando el $request sin data 
+            
+       
+        }
+        else {
+           return Usuario::get();
+        }
+
     }
 
     /**

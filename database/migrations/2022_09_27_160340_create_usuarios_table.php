@@ -19,10 +19,7 @@ class CreateUsuariosTable extends Migration
             $table->string('correo')->unique();
             $table->string('genero');
             $table->boolean('activo');
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+            
         });
     }
 

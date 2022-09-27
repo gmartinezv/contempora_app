@@ -7,5 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Usuario extends Model
 {
+    protected $guarded = [];
+    public $timestamps = false;
     use HasFactory;
+    
 }
