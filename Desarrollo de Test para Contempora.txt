@@ -7,10 +7,56 @@ Ejecuciones:
     -- a la fecha de hoy 26-09-2022 crea framework Laravel v 8.6.12 
    #git init 
 
-   al ejecutar: Cl4ve007###
+   al ejecutar: 
    #php artisan serve --me aparece la version Laravel v8.83.24 (PHP v7.3.21)
 
-   creacion de DB en MariaDB  - contempora
+   creacion de DB en MariaDB  - contempora / Cl4ve007###
+   modifico el archivo .env agregando los datos de la DB
+
+ Creacion del depositorio:
+   git remote add origin  https://github.com/gmartinezv/contempora_app.git
+   git branch -M main 
+   git push -u origin main --force
+
+
+______________
+2do dia 
+
+     creacion de la tabla Usuario, migraciones, seeders, factory
+
+     #php artisan make:model Usuario -mfr --api
+     -- me genera el modelo, factory y los resource
+
+     modifico en database/migrations la estructura de la tabla agregandole los campos:
+     genero, activo, correo
+
+     luego modifico en database/factories la definicion para que se agregen registros de pruebas con $fake.  (opcional)
+
+     y en los database/seeders ordeno ejecutar el factory con 10 registro de prueba.  (opcional)
+
+    #php artisan migrate:fresh --seed
+    -- se crea la tabla Usuario con los datos de prueba.
+
+    en routes/web.php agrego:
+
+    Route::apiResource('/usuarios', UsuarioController::class );
+
+    --y esto me habilita las rutas de modelo usuario para ser usadas como API.
+
+    Modifico el controlador  UsuarioController.php 
+    agregando las instrucciones conrespondiente a cada endpoint (get,post,put/patch)
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
