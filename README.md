@@ -22,7 +22,8 @@ Para ejecutarlo necesitas tener: un servidor con apache, php 7, Mysql, composer.
 
 -3. Run `composer install  `  o `composer update`.
 
- luego ejecutar en su localhost la dirección completa donde coloco el proyecto.
+ luego ejecutar en su localhost la dirección completa donde coloco el proyect, o ubicado en esta carpeta ejecutar #php artisan serve y en el navegador colocar la dirección: http://localhost:8000/usuarios.
+ 
 
 Dentro del proyecto hay un archivo llamado `Desarrollo de test para Contempora.txt`, alli encontrará todos los pasos que fueron ejecutados para la realizacion de este Test o prueba. 
 
