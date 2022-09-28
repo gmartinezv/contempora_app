@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
+use App\Http\Controllers\PublicacioneController;
+use App\Http\Controllers\ComentarioController;
 
 
 /*
@@ -20,6 +22,10 @@ Route::get('/', function () {
 });
 
 Route::apiResource('/usuarios', UsuarioController::class );
+
+Route::apiResource('/publicaciones', PublicacioneController::class );
+
+Route::apiResource('/comentarios', ComentarioController::class );
 
 Route::get('/token', function () {
     return csrf_token(); 

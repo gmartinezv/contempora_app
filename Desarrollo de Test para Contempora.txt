@@ -50,9 +50,16 @@ ______________
 
     Revision de los datos * 
     ** agregar las lineas en Models/Usuario: 
-              protected $guarded = []; (para poder utilizar post de postman y VerifyCsrfToken.php except de localhost)
+              protected $guarded = []; (para poder utilizar post en postman y VerifyCsrfToken.php except de localhost) * ojo: use fue el thunder de VSCode.
               public $timestamps = false;
     ** en el Usuario/controller  coloque observaciones de la revision.
+
+    git push -u origin main (3er commit)
+
+    php artisan make:model Publicacione -mfr --api
+    php artisan make:model Comentario -mfr --api
+
+    modifico en database/migrations la estructura de las tablas +campos.
 
 
 
